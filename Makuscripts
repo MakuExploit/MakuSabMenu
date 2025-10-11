@@ -122,7 +122,7 @@ createButton("Button2", "Admin Command", function()
 end)
 
 createButton("Button3", "Brainrot Spawner", function()
-    loadstring(game:HttpGet("https://gitlab.com/traxscriptss/traxscriptss/-/raw/main/visual2.lua"))()
+    loadstring(game:HttpGet("z"))()
 end)
 
 -- Close behavior
