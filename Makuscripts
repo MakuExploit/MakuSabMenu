@@ -121,8 +121,8 @@ createButton("Button2", "Admin Command", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MoziIOnTop/MoziIHub/refs/heads/main/Ok"))()
 end)
 
-createButton("Button3", "Brainrot Spawner", function()
-    loadstring(game:HttpGet("z"))()
+createButton("Button3", "Brainrot Duper", function()
+    loadstring(game:HttpGet("https://pastefy.app/fI0CcmL4/raw"))()
 end)
 
 -- Close behavior
